@@ -1,3 +1,13 @@
+# Function to view contact details
+def view_contact(name):
+    if name in contacts:
+        contact_info = contacts[name]
+        print(f"Name: {name}")
+        print(f"Phone: {contact_info['Phone']}")
+        print(f"Email: {contact_info['Email']}")
+    else:
+        print(f"Contact '{name}' not found!")
+
 # Main program loop
 while True:
     print("\nContact Application Menu:")
