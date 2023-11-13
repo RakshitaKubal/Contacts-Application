@@ -7,6 +7,14 @@ def view_contact(name):
         print(f"Email: {contact_info['Email']}")
     else:
         print(f"Contact '{name}' not found!")
+# Function to list all contacts
+def list_contacts():
+    if not contacts:
+        print("No contacts found.")
+    else:
+        print("List of Contacts:")
+        for name in contacts:
+            print(name)
 
 # Main program loop
 while True:
